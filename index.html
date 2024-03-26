@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Random Password</title>
+</head>
+
+  <body>
+    <div class="container">
+      <h1>Generate a <br> <span>Random Password</span></h1>
+
+      <div class="questions">
+      <div class="password-length">Please indicate required <span>length</span> of password: 
+        <input class="password-length-input" type="text">
+    </div>
+    
+      <div class="upper-case"> Shall <span>uppercase</span> be used in the password?  <input id="upperCase" type="checkbox"/> </div>
+     
+      <div class="lower-case"> Shall <span>lowercase</span> be used in the password? <input id="lowerCase" type="checkbox"/> </div>
+      
+      <div class="number"> Shall <span>number</span> be used in the password? <input id="number" type="checkbox"/> </div>
+      
+      <div class="symbol"> Shall <span>symbol</span> be used in the password?  <input id="symbol" type="checkbox"/> </div>
+     
+     </div>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password">
+        <img src="img/copy.png" onclick="copyPassword()">
+      </div>
+      <button onclick="createPassword()"><img src="img/generate.png">Generate Password</button>
+    </div>
+
+     <script src="script.js"></script>
+  </body>
+</html>
+
